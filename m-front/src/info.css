@@ -1,0 +1,48 @@
+/* info.css */
+.info-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.info-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("autPage.jpg"); /* Make sure the image path is correct */
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.info-content {
+    max-width: 800px; /* Limit max width for better readability */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px; /* More padding for better spacing */
+    border-radius: 8px;
+    text-align: left; /* Align text to the left for readability */
+    line-height: 1.6; /* Improve line spacing */
+}
+
+.link {
+    display: inline-block;
+    margin-top: 20px; /* Space above the link */
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.link:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}

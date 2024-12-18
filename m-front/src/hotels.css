@@ -1,0 +1,88 @@
+.hotels-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .hotels-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("autPage.jpg"); /* Replace with your background image */
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+    filter: blur(5px);
+  }
+  
+  .hotel-card {
+    display: flex;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    width: 70%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+  }
+  
+  .hotel-info {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hotel-image {
+    width: 700px;  /* Fixed width */
+    height: 500px; /* Fixed height */
+    object-fit: cover; /* Cover the area */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+  
+  .book-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    align-self: flex-start;
+  }
+  
+  .book-button:hover {
+    background-color: #ff4500;
+  }
+  
+  .nav-button {
+    background-color: transparent;
+    color: white;
+    font-size: 36px;
+    border: none;
+    cursor: pointer;
+    margin: 0 20px;
+    padding: 10px;
+  }
+  
+  .nav-button:hover {
+    color: #ff9900;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .prev-button {
+    transform: rotate(180deg);
+  }
+  
